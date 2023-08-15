@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ENGINELOC=$HOME/pure/legend-engine
-CONFIG_LOC=$HOME/pure/legend-engine/legend-engine-server/src/test/resources/org/finos/legend/engine/server/test/userTestConfig.json
+CONFIG_LOC=$HOME/pure/legend-engine/legend-engine-config/legend-engine-server/src/test/resources/org/finos/legend/engine/server/test/userTestConfig.json
 
 
 export MAVEN_OPTS="-Dfile.encoding=UTF8 -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
-cd $ENGINELOC && mvn -pl legend-engine-server exec:java -Dexec.mainClass="org.finos.legend.engine.server.Server" -Dexec.args="server ${CONFIG_LOC}"
+cd $ENGINELOC && mvn -pl legend-engine-config/legend-engine-server exec:java -Dexec.mainClass="org.finos.legend.engine.server.Server" -Dexec.args="server ${CONFIG_LOC}"
