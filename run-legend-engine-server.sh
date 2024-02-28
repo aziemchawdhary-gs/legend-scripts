@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ENGINELOC=$HOME/pure/legend-engine
-CONFIG_LOC=$HOME/pure/legend-engine/legend-engine-config/legend-engine-server/src/test/resources/org/finos/legend/engine/server/test/userTestConfig.json
+CONFIG_LOC=$HOME/pure/legend-engine/legend-engine-config/legend-engine-server/config/config.json
 
 
 export MAVEN_OPTS="-Dfile.encoding=UTF8 -agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n"
